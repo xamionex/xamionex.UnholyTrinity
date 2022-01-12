@@ -1,0 +1,8 @@
+"pilot_base"
+{
+    "global"
+    {
+        slidedecel  0
+        slidevelocitydecay  1
+    }
+}
