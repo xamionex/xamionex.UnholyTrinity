@@ -1,0 +1,18 @@
+WeaponData
+{
+	"stat_accuracy"   								"100"
+	"ammo_clip_size"   								"9999"
+	"ammo_no_remove_from_clip"                      "1"
+	// Spread
+	"spread_stand_hip" 								"0.01"
+	"spread_stand_hip_run" 							"0.01"
+	"spread_stand_ads"  							"0.01" //"0.1"
+	"spread_crouch_hip"								"0.01"
+	"spread_crouch_ads"  							"0.01"
+	"spread_air_hip"	   							"0.01"
+	"spread_air_ads"   								"0.01" //".15"
+	"ammo_suck_behavior"							"primary_weapons"
+	// WeaponED Unhandled Key/Values and custom script Key/Values
+	"sprintcycle_time"								".55"
+	"is_sniper"										"1"
+}

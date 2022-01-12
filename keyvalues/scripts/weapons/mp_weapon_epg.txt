@@ -1,0 +1,26 @@
+WeaponData
+{
+	"projectile_launch_speed"						"2000"
+	"projectile_gravity_scale"						"0.0001"
+	// Ammo
+	"ammo_clip_size"								"10"
+	"ammo_no_remove_from_clip"						"1"
+	"reload_time"					            	"0.5"
+	"reloadempty_time"								"0.5"
+	"fire_rate"   									"1.3"
+	// Damage
+	"damage_near_value"   							"50"
+	"damage_far_value"								"50"
+	"damage_near_value_titanarmor"					"100"
+	"damage_far_value_titanarmor" 					"100"
+	"damage_near_distance"							"2000"
+	"damage_far_distance" 							"2500"
+	"allow_headshots" 								"1"
+	"headshot_distance" 							"5000"
+	"damage_headshot_scale"							"1.25"
+	"explosion_damages_owner"						"1"
+	"explosion_damage"								"50"
+	"explosion_inner_radius"  						"70"
+	"explosionradius" 								"200"
+	"impulse_force"   								"60000"
+}
