@@ -7,7 +7,7 @@ const bool BLACKLIST = true
 
 const bool FILTER_TYPE = BLACKLIST
 
-const string DEFAULT_WEAPON_PRIMARY = "mp_weapon_sniper"
+const string DEFAULT_WEAPON_PRIMARY = "mp_weapon_wingman_n"
 const string DEFAULT_WEAPON_SECONDARY = "mp_weapon_arena3"
 const string DEFAULT_WEAPON_BACKUP = "mp_weapon_epg"
 

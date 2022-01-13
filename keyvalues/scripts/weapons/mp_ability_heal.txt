@@ -1,0 +1,14 @@
+WeaponData
+{
+	MP_BASE
+	{
+		"ammo_clip_size"   								"400"
+		"ammo_default_total"							"400"
+		"ammo_display"									"bar"
+		"ammo_drains_to_empty_on_fire"					"1"
+		"ammo_min_to_fire"								"400"
+		"ammo_per_shot"									"400"
+		"ammo_stockpile_max"							"400"
+		"regen_ammo_refill_rate"						"30"
+	}
+}
