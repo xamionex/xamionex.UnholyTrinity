@@ -1,0 +1,11 @@
+WeaponData
+{
+	Mods
+	{
+		amped_tacticals
+		{
+			"grapple_power_required"						"10"
+			"grapple_power_use_rate"						"10"
+		}
+	}
+}
