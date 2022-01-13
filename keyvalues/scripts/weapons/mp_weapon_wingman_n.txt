@@ -38,6 +38,29 @@ WeaponData
 	"empty_reload_only"								"1"
 	"damage_near_value"   							"1000"
 	"damage_far_value"								"1000"
+	"primary_fire_does_not_block_sprint"			"1"
+	"crosshair_force_sprint_fade_disabled"          "1"
+	"bolt_bounce_frac"								"0.7"
+	"projectile_damage_reduction_per_bounce"		"0.0"
+	"projectile_damages_owner"						"0"
+	"projectile_ricochet_max_count"					"5"
+	"silenced"										"1"
+	"fire_sound_2_player_1p"						"Weapon_Wingman_FireSuppressed_1P"
+	"fire_sound_2_player_3p"						"Weapon_Wingman_FireSuppressed_3P"
+	"fire_sound_2_npc"								"Weapon_Wingman_FireSuppressed_NPC"
+	"damage_near_value"   							"--10"
+	"damage_far_value"								"--10"
+	"damage_very_far_value"							"--10"
+	"bodygroup2_set"								"1"
+	"fast_swap_to"									"1"
+
+	//"rumble"  						"4"
+	"tracer_effect"   					"P_wpn_tracer_pistol"
+	"minimap_reveal_distance"			"1"
+
+	"fx_muzzle_flash_view"				"wpn_muzzleflash_pistol_sup_FP"
+	"fx_muzzle_flash_world"				"wpn_muzzleflash_pistol_sup"
+	"fx_muzzle_flash_attach"			"muzzle_flash_suppressor_sq"
 
 	MP_BASE
 	{
@@ -49,5 +72,26 @@ WeaponData
 		"damage_far_value"								"1000"
 		"damage_near_value_titanarmor"					"1000"
 		"damage_far_value_titanarmor" 					"1000"
+	}
+	Mods
+	{
+		{
+			"silenced"							"1"
+			"fire_sound_2_player_1p"			"Weapon_Wingman_FireSuppressed_1P"
+			"fire_sound_2_player_3p"			"Weapon_Wingman_FireSuppressed_3P"
+			"fire_sound_2_npc"					"Weapon_Wingman_FireSuppressed_NPC"
+			"damage_near_value"   				"--10"
+			"damage_far_value"					"--10"
+			"damage_very_far_value"				"--10"
+			"bodygroup2_set"					"1"
+
+			//"rumble"  						"4"
+			"tracer_effect"   					"P_wpn_tracer_pistol"
+			"minimap_reveal_distance"			"1"
+
+			"fx_muzzle_flash_view"				"wpn_muzzleflash_pistol_sup_FP"
+			"fx_muzzle_flash_world"				"wpn_muzzleflash_pistol_sup"
+			"fx_muzzle_flash_attach"			"muzzle_flash_suppressor_sq"
+		}
 	}
 }

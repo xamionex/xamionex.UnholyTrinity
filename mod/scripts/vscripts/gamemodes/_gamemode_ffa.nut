@@ -119,7 +119,7 @@ void function ForceWeapon( entity player )
 		{
 			player.TakeWeaponNow( weapon.GetWeaponClassName() )
 
-			SendHudMessage( player, "Thee Shall Flyeth", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
+			SendHudMessage( player, "Thy Shall Fly", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
 
 			switch ( enum_ ) {
 				case 0:
