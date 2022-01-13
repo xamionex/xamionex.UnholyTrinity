@@ -20,7 +20,7 @@ WeaponData
 	"headshot_distance" 							"5000"
 	"damage_headshot_scale"							"1.25"
 	"explosion_damages_owner"						"1"
-	"explosion_damage"								"50"
+	"explosion_damage"								"70"
 	"explosion_inner_radius"  						"70"
 	"explosionradius" 								"200"
 	"impulse_force"   								"60000"

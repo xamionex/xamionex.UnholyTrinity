@@ -38,6 +38,29 @@ WeaponData
 	"empty_reload_only"								"1"
 	"damage_near_value"   							"1000"
 	"damage_far_value"								"1000"
+	"primary_fire_does_not_block_sprint"			"1"
+	"crosshair_force_sprint_fade_disabled"          "1"
+	"bolt_bounce_frac"								"0.7"
+	"projectile_damage_reduction_per_bounce"		"0.0"
+	"projectile_damages_owner"						"0"
+	"projectile_ricochet_max_count"					"2"
+	"silenced"							"1"
+	"fire_sound_2_player_1p"			"Weapon_Wingman_FireSuppressed_1P"
+	"fire_sound_2_player_3p"			"Weapon_Wingman_FireSuppressed_3P"
+	"fire_sound_2_npc"					"Weapon_Wingman_FireSuppressed_NPC"
+	"damage_near_value"   				"--10"
+	"damage_far_value"					"--10"
+	"damage_very_far_value"				"--10"
+	"bodygroup2_set"					"1"
+	"fast_swap_to"									"1"
+
+	//"rumble"  						"4"
+	"tracer_effect"   					"P_wpn_tracer_pistol"
+	"minimap_reveal_distance"			"1"
+
+	"fx_muzzle_flash_view"				"wpn_muzzleflash_pistol_sup_FP"
+	"fx_muzzle_flash_world"				"wpn_muzzleflash_pistol_sup"
+	"fx_muzzle_flash_attach"			"muzzle_flash_suppressor_sq"
 
 	MP_BASE
 	{
@@ -49,5 +72,75 @@ WeaponData
 		"damage_far_value"								"1000"
 		"damage_near_value_titanarmor"					"1000"
 		"damage_far_value_titanarmor" 					"1000"
+	}
+	Mods
+	{
+		hcog
+		{
+			"bodygroup3_set"	"1"
+			"bodygroup4_set"	"0"
+			"bodygroup5_set"	"0"
+			"viewmodel_offset_ads"							"0 -6.7 -0.75"
+			"zoom_fov"										"35"
+			"anim_alt_idleAttack"	"1"
+
+			"dof_zoom_nearDepthStart"						"6.161"
+			"dof_zoom_nearDepthEnd"							"9.204"
+		}
+		redline_sight
+		{
+			"bodygroup3_set"	"0"
+			"bodygroup4_set"	"1"
+			"bodygroup5_set"	"0"
+			"viewmodel_offset_ads"							"0 -9 -0.78"
+			"dof_zoom_nearDepthStart"						"4.491"
+			"dof_zoom_nearDepthEnd"							"5.545"
+		}
+		threat_scope
+		{
+			"bodygroup3_set"	"0"
+			"bodygroup4_set"	"0"
+			"bodygroup5_set"	"1"
+			"threat_scope_enabled"			"1"
+			"threat_scope_bounds_tagname1"	"SCR_TR_CRO"
+			"threat_scope_bounds_tagname2"	"SCR_BL_CRO"
+			"viewmodel_offset_ads"							"0 -9 -0.78"
+			"dof_zoom_nearDepthStart"						"4.491"
+			"dof_zoom_nearDepthEnd"							"5.545"
+		}
+		pro_screen
+		{
+			"ui8_enable"		"1"
+			"bodygroup6_set"	"1"
+		}
+		tactical_cdr_on_kill
+		{
+
+		}
+		pas_fast_reload
+		{
+			"reload_time"								"1.3"
+			"reload_time_late1"							"1.3"
+			"reloadempty_time"							"1.3"
+			"reloadempty_time_late1"					"1.3"
+		}
+		burn_mod_wingman_n
+		{
+			//FX
+			"tracer_effect"   								"P_wpn_tracer_BC"
+			"tracer_effect_first_person"                    "P_wpn_tracer_BC"
+			"fx_muzzle_flash_view"							"wpn_muzzleflash_pistol_elec_FP"
+			"fx_muzzle_flash_world"							"wpn_muzzleflash_pistol_elec"
+			"projectile_trail_effect_0" 					"weapon_kraber_projectile_burn"
+			"impact_effect_table"		 					"titan_bullet_elec"
+
+			"is_burn_mod"		"1"
+
+			"damage_near_value"   							"++20"
+			"damage_far_value"								"++20"
+   	 		"damage_very_far_value"							"++20"
+			"damage_near_value_titanarmor"					"450"
+			"damage_far_value_titanarmor" 					"400"
+		}
 	}
 }
