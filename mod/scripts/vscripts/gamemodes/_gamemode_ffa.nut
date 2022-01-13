@@ -11,7 +11,7 @@ const string DEFAULT_WEAPON_PRIMARY = "mp_weapon_sniper"
 const string DEFAULT_WEAPON_SECONDARY = "mp_weapon_arena3"
 const string DEFAULT_WEAPON_BACKUP = "mp_weapon_epg"
 
-const array< string > WEAPONS_LIST = ["mp_weapon_rspn101","mp_weapon_r97","mp_weapon_alternator_smg","mp_weapon_car","mp_weapon_hemlok_smg","mp_weapon_lmg","mp_weapon_lstar","mp_weapon_esaw","mp_weapon_vinson","mp_weapon_hemlok","mp_weapon_g2","mp_weapon_shotgun","mp_weapon_mastiff","mp_weapon_dmr","mp_weapon_doubletake","mp_weapon_epg","mp_weapon_smr","mp_weapon_pulse_lmg","mp_weapon_softball","mp_weapon_autopistol","mp_weapon_semipistol","mp_weapon_wingman","mp_weapon_shotgun_pistol","mp_weapon_rocket_launcher","mp_weapon_arc_launcher","mp_weapon_defender","mp_weapon_mgl","mp_weapon_wingman_n","mp_weapon_rspn101_og","mp_weapon_smart_pistol","mp_weapon_yh803","mp_weapon_yh803_bullet","mp_weapon_yh803_bullet_overcharged"]
+const array< string > WEAPONS_LIST = ["mp_weapon_rspn101","mp_weapon_r97","mp_weapon_alternator_smg","mp_weapon_car","mp_weapon_hemlok_smg","mp_weapon_lmg","mp_weapon_lstar","mp_weapon_esaw","mp_weapon_vinson","mp_weapon_hemlok","mp_weapon_g2","mp_weapon_shotgun","mp_weapon_mastiff","mp_weapon_dmr","mp_weapon_doubletake","mp_weapon_epg","mp_weapon_smr","mp_weapon_pulse_lmg","mp_weapon_softball","mp_weapon_autopistol","mp_weapon_semipistol","mp_weapon_wingman","mp_weapon_shotgun_pistol","mp_weapon_rocket_launcher","mp_weapon_arc_launcher","mp_weapon_defender","mp_weapon_mgl","mp_weapon_rspn101_og","mp_weapon_smart_pistol","mp_weapon_yh803","mp_weapon_yh803_bullet","mp_weapon_yh803_bullet_overcharged"]
 
 //============================|EDITABLE VARIABLES END|============================//
 
@@ -119,7 +119,7 @@ void function ForceWeapon( entity player )
 		{
 			player.TakeWeaponNow( weapon.GetWeaponClassName() )
 
-			SendHudMessage( player, "", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
+			SendHudMessage( player, "Thee Shall Flyeth", -1, 0.4, 255, 0, 0, 0, 0, 3, 0.15 )
 
 			switch ( enum_ ) {
 				case 0:
