@@ -1,8 +1,5 @@
 WeaponData
 {
-	"stat_accuracy"   								"100"
-	"ammo_clip_size"   								"10"
-	"ammo_no_remove_from_clip"                      "1"
 	// Spread
 	"spread_stand_hip"								"0"
 	"spread_stand_hip_run"							"0"
@@ -28,23 +25,31 @@ WeaponData
 	"spread_wallhanging"  							"0"
 	"spread_decay_delay"  							"0.1"
 	"spread_decay_rate"   							"40"
-	// WeaponED Unhandled Key/Values and custom script Key/Values
+	// Behavior
 	"sprintcycle_time"								".55"
 	"is_sniper"										"1"
 	"bolt_speed"									"12100"
 	"bolt_gravity_enabled"							"0"
+	"stat_accuracy"   								"100"
+	// Ammo
+	"rechamber_time"								"0"
 	"reload_enabled"								"0"
 	"empty_reload_only"								"1"
+	"ammo_no_remove_from_clip"                      "1"
+	"ammo_no_remove_from_stockpile"                 "1"
+	"fire_rate"   									"1.3"
+	// Damage
 	"damage_near_value"   							"1000"
 	"damage_far_value"								"1000"
-	"bolt_speed"									"12100"
+	"damage_near_value_titanarmor"					"1000"
+	"damage_far_value_titanarmor" 					"1000"
+	// Ricochet
+	"projectile_damage_reduction_per_bounce"		"0.0"
+	"projectile_damages_owner"						"0"
+	"projectile_ricochet_max_count"					"5"
 
 	MP_BASE
 	{
-		"ammo_default_total"							"10"
-		"ammo_stockpile_max"							"10"
-        "ammo_no_remove_from_clip"                      "1"
-        "ammo_no_remove_from_stockpile"                 "1"
 		"damage_near_value"   							"1000"
 		"damage_far_value"								"1000"
 		"damage_near_value_titanarmor"					"1000"
