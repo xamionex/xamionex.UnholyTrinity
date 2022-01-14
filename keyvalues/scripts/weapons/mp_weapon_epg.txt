@@ -7,7 +7,8 @@ WeaponData
 	"allow_headshots" 								"1"
 	"headshot_distance" 							"5000"
 	"damage_headshot_scale"							"1.25"
-	"impulse_force"   								"999999"
+	"impulse_force"									"999999"
+	"impulse_force_explosions"						"999999"
 
 	MP_BASE
 	{
