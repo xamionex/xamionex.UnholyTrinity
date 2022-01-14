@@ -11,14 +11,14 @@ WeaponData
 
 	MP_BASE
 	{
-		"damage_near_value"   							"50"
-		"damage_far_value"								"200"
+        "damage_near_value"   							"200"
+        "damage_far_value"								"200"
 		"damage_near_distance"							"2000"
 		"damage_far_distance" 							"3000"
 		"explosion_damages_owner"						"1"
-		"explosion_damage"								"150"
-		"explosion_inner_radius"  						"40"
-		"explosionradius" 								"200"
+		"explosion_damage"								"1"
+		"explosion_inner_radius"  						"30"
+		"explosionradius" 								"400"
         "ammo_no_remove_from_clip"                      "1"
         "ammo_no_remove_from_stockpile"                 "1"
 	}

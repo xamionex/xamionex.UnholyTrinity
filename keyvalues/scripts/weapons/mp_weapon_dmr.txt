@@ -44,4 +44,12 @@ WeaponData
 	"projectile_damage_reduction_per_bounce"		"0.0"
 	"projectile_damages_owner"						"0"
 	"projectile_ricochet_max_count"					"5"
+
+	MP_BASE
+	{
+		"damage_near_value"   							"1000"
+		"damage_far_value"								"1000"
+		"damage_near_value_titanarmor"					"1000"
+		"damage_far_value_titanarmor" 					"1000"
+	}
 }
