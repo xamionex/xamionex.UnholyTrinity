@@ -1,6 +1,6 @@
 {
 	"Name" : "xamionex.UnholyTrinity",
 	"Description" : "This is my custom weapons for the UnholyTrinity server\n\nThis is a server side script, no need for clients to download",
-	"Version": "1.0.3",
+	"Version": "1.0.4",
 	"LoadPriority": 2
 }
