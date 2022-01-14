@@ -16,7 +16,7 @@ WeaponData
 
 	MP_BASE
 	{
-		"damage_near_value"   							"50"
+		"damage_near_value"   							"200"
 		"damage_far_value"								"200"
 		"damage_near_distance"							"2000"
 		"damage_far_distance" 							"3000"
