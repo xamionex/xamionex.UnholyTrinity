@@ -31,6 +31,10 @@ WeaponData
 	"bolt_speed"									"12100"
 	"bolt_gravity_enabled"							"0"
 	"stat_accuracy"   								"100"
+	"holster_time"									"0.01"
+	"deploy_time" 									"0.01"
+	"lower_time"  									"0.01"
+	"raise_time"  									"0.01"
 	// Ammo
 	"rechamber_time"								"0"
 	"reload_enabled"								"0"

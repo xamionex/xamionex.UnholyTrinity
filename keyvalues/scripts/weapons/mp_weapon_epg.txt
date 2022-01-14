@@ -9,6 +9,10 @@ WeaponData
 	"damage_headshot_scale"							"1.25"
 	"impulse_force"									"999999"
 	"impulse_force_explosions"						"999999"
+	"holster_time"									"0.01"
+	"deploy_time" 									"0.01"
+	"lower_time"  									"0.01"
+	"raise_time"  									"0.01"
 
 	MP_BASE
 	{

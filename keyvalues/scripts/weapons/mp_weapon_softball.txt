@@ -9,6 +9,10 @@ WeaponData
 	"damage_headshot_scale"							"1.25"
 	"impulse_force"									"9999999"
 	"impulse_force_explosions"						"9999999"
+	"holster_time"									"0.01"
+	"deploy_time" 									"0.01"
+	"lower_time"  									"0.01"
+	"raise_time"  									"0.01"
 
 	MP_BASE
 	{
@@ -19,7 +23,7 @@ WeaponData
 		"explosion_damages_owner"						"1"
 		"explosion_damage"								"1"
 		"explosion_inner_radius"  						"30"
-		"explosionradius" 								"1000"
+		"explosionradius" 								"400"
         "ammo_no_remove_from_clip"                      "1"
         "ammo_no_remove_from_stockpile"                 "1"
 	}
