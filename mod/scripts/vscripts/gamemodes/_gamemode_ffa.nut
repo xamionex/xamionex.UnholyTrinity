@@ -79,6 +79,7 @@ const array< string > WEAPONS_LIST = ["mp_weapon_rspn101","mp_weapon_r97","mp_we
 void function FFA_Init()
 {
 	ClassicMP_ForceDisableEpilogue( true )
+	SetShouldUseRoundWinningKillReplay( true )
 	ScoreEvent_SetupEarnMeterValuesForMixedModes()
 
 	AddCallback_OnPlayerKilled( OnPlayerKilled )
