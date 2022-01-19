@@ -81,6 +81,7 @@ void function FFA_Init()
 	ClassicMP_ForceDisableEpilogue( true )
 	SetShouldUseRoundWinningKillReplay( true )
 	ScoreEvent_SetupEarnMeterValuesForMixedModes()
+	Riff_ForceTitanAvailability( eTitanAvailability.Never )
 
 	AddCallback_OnPlayerKilled( OnPlayerKilled )
 
