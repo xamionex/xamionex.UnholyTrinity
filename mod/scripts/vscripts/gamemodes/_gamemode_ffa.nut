@@ -87,8 +87,6 @@ void function FFA_Init()
 
 	AddCallback_OnPlayerRespawned( OnPlayerRespawned )
 	AddCallback_OnPlayerGetsNewPilotLoadout( OnPlayerChangeLoadout)
-
-	//SetPlaylistVarOverride( "custom_air_accel_pilot", "9000" )
 }
 
 void function OnPlayerKilled( entity victim, entity attacker, var damageInfo )
