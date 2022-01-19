@@ -79,6 +79,7 @@ const array< string > WEAPONS_LIST = ["mp_weapon_rspn101","mp_weapon_r97","mp_we
 void function FFA_Init()
 {
 	ClassicMP_ForceDisableEpilogue( true )
+	SetShouldUseRoundWinningKillReplay( true )
 	ScoreEvent_SetupEarnMeterValuesForMixedModes()
 
 	AddCallback_OnPlayerKilled( OnPlayerKilled )
@@ -86,8 +87,6 @@ void function FFA_Init()
 
 	AddCallback_OnPlayerRespawned( OnPlayerRespawned )
 	AddCallback_OnPlayerGetsNewPilotLoadout( OnPlayerChangeLoadout)
-
-	//SetPlaylistVarOverride( "custom_air_accel_pilot", "9000" )
 }
 
 void function OnPlayerKilled( entity victim, entity attacker, var damageInfo )
