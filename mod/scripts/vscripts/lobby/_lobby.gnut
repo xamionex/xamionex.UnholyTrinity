@@ -15,6 +15,8 @@ void function Lobby_Init()
 	SetPlaylistVarOverride( "no_pilot_collision", "1" )
 	SetPlaylistVarOverride( "run_epilogue", "0" )
 	SetPlaylistVarOverride( "classic_mp", "0" )
+	SetPlaylistVarOverride( "scorelimit", "200" )
+	SetPlaylistVarOverride( "timelimit", "30" )
 
 	if ( IsPrivateMatch() || GetCurrentPlaylistName() == "private_match" ) // IsPrivateMatch() doesn't seem to be reliable on local server start
 		PrivateLobby_Init()
