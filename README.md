@@ -9,4 +9,4 @@
 3. Done, you can enjoy your UnholyTrinity server!
 
 ## Movement tutorial
-[![Movement Tutorial](https://www.youtube.com/watch?v=C_cXYyA4LaU)
+[![Movement Tutorial](https://img.youtube.com/vi/C_cXYyA4LaU/0.jpg)](https://www.youtube.com/watch?v=C_cXYyA4LaU)
