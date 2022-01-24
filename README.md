@@ -8,5 +8,5 @@
    - slide_step_velocity_reduction -45
 3. Done, you can enjoy your UnholyTrinity server!
 
-## Bunny hopping tutorial for this mod
-[![Bhop Tutorial](https://img.youtube.com/vi/L8UHWvKuFDw/0.jpg)](https://www.youtube.com/watch?v=L8UHWvKuFDw)
+## Movement tutorial
+[![Movement Tutorial](https://www.youtube.com/watch?v=C_cXYyA4LaU)
