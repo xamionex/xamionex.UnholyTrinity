@@ -17,7 +17,6 @@ void function Lobby_Init()
 	SetPlaylistVarOverride( "classic_mp", "0" )
 	SetPlaylistVarOverride( "scorelimit", "200" )
 	SetPlaylistVarOverride( "timelimit", "30" )
-	ServerCommand("slide_step_velocity_reduction -45")
 
 	if ( IsPrivateMatch() || GetCurrentPlaylistName() == "private_match" ) // IsPrivateMatch() doesn't seem to be reliable on local server start
 		PrivateLobby_Init()
