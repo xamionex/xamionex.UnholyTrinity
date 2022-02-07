@@ -7,6 +7,7 @@ void function Lobby_Init()
 {
 	// need to prevent a crash
 	Music_Init()
+
 	SetPlaylistVarOverride( "custom_air_accel_pilot", "9000" )
 	SetPlaylistVarOverride( "featured_mode_amped_tacticals", "1" )
 	SetPlaylistVarOverride( "fp_embark_enabled", "1" )
