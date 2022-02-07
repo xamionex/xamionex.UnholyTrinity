@@ -7,7 +7,7 @@ Softball and H.E.L.L. is placed in the players 2nd and 3rd slot with Softball be
 
 ## How to install on your server
 
-1. Extract the latest release, open `mods` folder and place xamionex.PilotsVsBoss into R2Northstar\mods\
+1. Extract the latest release, open `mods` folder and place xamionex.UnholyTrinity into R2Northstar\mods\
 2. Done, you can enjoy your UnholyTrinity server!
 
 - Been tested with pvp,ffa,skirmish
