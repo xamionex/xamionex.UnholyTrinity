@@ -1,0 +1,80 @@
+WeaponData
+{
+	// Spread
+	"spread_stand_hip"								"0"
+	"spread_stand_hip_run"							"0"
+	"spread_stand_hip_sprint"                       "0"
+	"spread_crouch_hip"   							"0"
+	"spread_air_hip"  								"0"
+	"spread_stand_ads"								"0.0" //"0.3"
+	"spread_crouch_ads"   							"0.0" //"0.3"
+	"spread_air_ads"  								"0.0" //"0.3"
+	"spread_kick_on_fire_stand_hip"   				"0"
+	"spread_kick_on_fire_crouch_hip"  				"0"
+	"spread_kick_on_fire_air_hip" 					"0"
+	"spread_kick_on_fire_stand_ads"   				"0"
+	"spread_kick_on_fire_crouch_ads"  				"0"
+	"spread_kick_on_fire_air_ads" 					"0"
+	"spread_max_kick_stand_hip"   					"0"
+	"spread_max_kick_crouch_hip"  					"0"
+	"spread_max_kick_air_hip" 						"0"
+	"spread_max_kick_stand_ads"   					"0"
+	"spread_max_kick_crouch_ads"  					"0"
+	"spread_max_kick_air_ads" 						"0"
+	"spread_wallrunning"  							"0"
+	"spread_wallhanging"  							"0"
+	"spread_decay_delay"  							"0.1"
+	"spread_decay_rate"   							"40"
+	// Behavior
+	"stat_accuracy"   								"100"
+	"holster_time"									"0.3"
+	"deploy_time" 									"0.3"
+	"lower_time"  									"0.3"
+	"raise_time"  									"0.3"
+	// Ammo
+	"reload_enabled"								"0"
+	"empty_reload_only"								"1"
+	"ammo_no_remove_from_clip"                      "1"
+	"ammo_no_remove_from_stockpile"                 "1"
+	"fire_rate"   									"1.3"
+	// Damage
+	"damage_near_value"   							"1000"
+	"damage_far_value"								"1000"
+	"damage_near_value_titanarmor"					"1000"
+	"damage_far_value_titanarmor" 					"1000"
+	// Ricochet
+	"projectile_damage_reduction_per_bounce"		"0.0"
+	"projectile_damages_owner"						"0"
+	"projectile_ricochet_max_count"					"5"
+
+	MP_BASE
+	{
+		"damage_near_value"   							"1000"
+		"damage_far_value"								"1000"
+		"damage_near_value_titanarmor"					"1000"
+		"damage_far_value_titanarmor" 					"1000"
+	}
+
+	RUI_CrosshairData
+	{
+		DefaultArgs
+		{
+			adjustedSpread			weapon_spread
+			adsFrac 					player_zoomFrac
+			isSprinting					player_is_sprinting
+			isReloading				weapon_is_reloading
+			teamColor					crosshair_team_color
+			isAmped					weapon_is_amped
+		}
+
+		Crosshair_1
+		{
+			"ui"							"ui/crosshair_tri"
+			"base_spread"				"0"
+			Args
+			{
+				//isFiring				weapon_is_firing
+			}
+		}
+	}
+}
