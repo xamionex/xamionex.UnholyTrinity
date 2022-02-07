@@ -14,4 +14,4 @@ Softball and H.E.L.L. is placed in the players 2nd and 3rd slot with Softball be
 
 ## Bunny hopping tutorial for this mod
 
-[![Bhop Tutorial](https://img.youtube.com/vi/L8UHWvKuFDw/0.jpg)](https://www.youtube.com/watch?v=L8UHWvKuFDw)
+[![Movement Tutorial](https://img.youtube.com/vi/C_cXYyA4LaU/0.jpg)](https://www.youtube.com/watch?v=C_cXYyA4LaU)
