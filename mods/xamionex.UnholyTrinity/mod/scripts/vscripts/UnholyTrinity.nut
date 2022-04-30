@@ -5,6 +5,7 @@ global function UnholyTrinity_Init
 array<string> maplist = ["mp_forwardbase_kodai", "mp_grave","mp_homestead","mp_thaw","mp_black_water_canal","mp_eden","mp_drydock","mp_crashsite3","mp_complex3","mp_coliseum","mp_angel_city","mp_colony02","mp_relic02","mp_glitch","mp_lf_stacks","mp_lf_meadow","mp_lf_deck","mp_lf_traffic","mp_lf_township","mp_lf_uma","mp_coliseum_column","mp_wargames","mp_rise"]
 array<string> types = ["ps","gg","tt","inf","fastball","ctf_comp","hs","cp","lts","ctf","ttdm","turbo_ttdm","attdm","ffa","fra","coliseum","lf","rocket_lf","mfd", "chamber"]
 int wentToLobbyFirst
+string uht_map
 
 void function UnholyTrinity_Init()
 {
@@ -12,6 +13,7 @@ void function UnholyTrinity_Init()
 	
 	if( wentToLobbyFirst == 0)
 	{
+		SetConVarString ( "uht_map", GetMapName() )
 		SetCurrentPlaylist( "private_match" ) 
 		GameRules_ChangeMap( "mp_lobby", "private_match" )
 		SetConVarInt( "uht_wenttolobbyfirst", 1 )
@@ -21,7 +23,7 @@ void function UnholyTrinity_Init()
 
 void function ThreadUnholyTrinity()
 {
-	wait 5.0
+	wait 2.0
 
 	if( GetMapName() == "mp_lobby" )
 	{
@@ -37,29 +39,7 @@ void function ThreadUnholyTrinity()
 		SetPlaylistVarOverride( "timelimit", "30" )
 		ServerCommand( "slide_step_velocity_reduction -45" )
 		
-		SetCurrentPlaylist( SelectedType() ) 
-		GameRules_ChangeMap( SelectedMap(), SelectedType() )
+		SetCurrentPlaylist( "tdm" ) 
+		GameRules_ChangeMap( GetConVarString( "uht_map" ), "tdm" )
 	}
-}
-
-string function SelectedMap() // thanks peepeepoopooman :)
-{
-	string map = GetCurrentPlaylistVarString( "ReplacementMap", "mp_forwardbase_kodai" )
-	if ( maplist.find( map ) != -1 )
-	{
-		return GetCurrentPlaylistVarString( "ReplacementMap", "mp_forwardbase_kodai" ) 
-	}
-	print("uh oh, someone entered a bad mapname")
-	return "mp_forwardbase_kodai"
-}
-
-string function SelectedType() // thanks peepeepoopooman :)
-{
-	string map = GetCurrentPlaylistVarString( "ReplacementMode", "tdm" )
-	if ( types.find( map ) != -1 )
-	{
-		return GetCurrentPlaylistVarString( "ReplacementMode", "tdm" ) 
-	}
-		print( "uh oh, someone entered a bad gametype" )
-		return "tdm"
 }
