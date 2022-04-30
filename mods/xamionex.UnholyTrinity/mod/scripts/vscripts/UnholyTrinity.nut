@@ -2,17 +2,15 @@ untyped
 
 global function UnholyTrinity_Init
 
-array<string> maplist = ["mp_forwardbase_kodai", "mp_grave","mp_homestead","mp_thaw","mp_black_water_canal","mp_eden","mp_drydock","mp_crashsite3","mp_complex3","mp_coliseum","mp_angel_city","mp_colony02","mp_relic02","mp_glitch","mp_lf_stacks","mp_lf_meadow","mp_lf_deck","mp_lf_traffic","mp_lf_township","mp_lf_uma","mp_coliseum_column","mp_wargames","mp_rise"]
-array<string> types = ["ps","gg","tt","inf","fastball","ctf_comp","hs","cp","lts","ctf","ttdm","turbo_ttdm","attdm","ffa","fra","coliseum","lf","rocket_lf","mfd", "chamber"]
-int wentToLobbyFirst
+int uht_wenttolobbyfirst
 string uht_map
 string uht_gamemode
 
 void function UnholyTrinity_Init()
 {
-	wentToLobbyFirst = GetConVarInt( "uht_wenttolobbyfirst" )
+	uht_wenttolobbyfirst = GetConVarInt( "uht_wenttolobbyfirst" )
 	
-	if( wentToLobbyFirst == 0)
+	if( uht_wenttolobbyfirst == 0)
 	{
 		if( GetMapName() == "mp_lobby" )
 		{
