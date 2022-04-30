@@ -13,7 +13,10 @@ void function UnholyTrinity_Init()
 	
 	if( wentToLobbyFirst == 0)
 	{
-		SetConVarString ( "uht_map", GetMapName() )
+		if( GetMapName() == "mp_lobby" )
+			SetConVarString ( "uht_map", "mp_forwardbase_kodai" )
+		else
+			SetConVarString ( "uht_map", GetMapName() )
 		SetCurrentPlaylist( "private_match" ) 
 		GameRules_ChangeMap( "mp_lobby", "private_match" )
 		SetConVarInt( "uht_wenttolobbyfirst", 1 )
