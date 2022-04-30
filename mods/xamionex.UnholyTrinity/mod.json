@@ -1,7 +1,7 @@
 {
 	"Name": "xamionex.UnholyTrinity",
 	"Description": "This is my custom weapons for the UnholyTrinity server\n\nThis is a server side script, no need for clients to download",
-	"Version": "1.2.0",
+	"Version": "1.2.1",
 	"LoadPriority": 2,
 	"Scripts":[
 		{
@@ -19,12 +19,20 @@
 			}
 		}
 	],
-	
-	"ConVars": 
+
+	"ConVars":
 	[
 		{
 			"Name": "uht_wenttolobbyfirst",
 			"DefaultValue": "0"
+		},
+		{
+			"Name": "uht_map",
+			"DefaultValue": "mp_forwardbase_kodai"
+		},
+		{
+			"Name": "uht_gamemode",
+			"DefaultValue": "tdm"
 		}
 	]
 }

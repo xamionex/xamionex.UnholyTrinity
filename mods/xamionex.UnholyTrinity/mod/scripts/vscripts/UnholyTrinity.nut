@@ -2,29 +2,31 @@ untyped
 
 global function UnholyTrinity_Init
 
-array<string> maplist = ["mp_forwardbase_kodai", "mp_grave","mp_homestead","mp_thaw","mp_black_water_canal","mp_eden","mp_drydock","mp_crashsite3","mp_complex3","mp_coliseum","mp_angel_city","mp_colony02","mp_relic02","mp_glitch","mp_lf_stacks","mp_lf_meadow","mp_lf_deck","mp_lf_traffic","mp_lf_township","mp_lf_uma","mp_coliseum_column","mp_wargames","mp_rise"]
-array<string> types = ["ps","gg","tt","inf","fastball","ctf_comp","hs","cp","lts","ctf","ttdm","turbo_ttdm","attdm","ffa","fra","coliseum","lf","rocket_lf","mfd", "chamber"]
-int wentToLobbyFirst
+int uht_wenttolobbyfirst
 string uht_map
 string uht_gamemode
 
 void function UnholyTrinity_Init()
 {
-	wentToLobbyFirst = GetConVarInt( "uht_wenttolobbyfirst" )
-	
-	if( wentToLobbyFirst == 0)
+	uht_wenttolobbyfirst = GetConVarInt( "uht_wenttolobbyfirst" )
+
+	if( uht_wenttolobbyfirst == 0)
 	{
 		if( GetMapName() == "mp_lobby" )
 		{
-			SetConVarString ( "uht_map", "mp_forwardbase_kodai" )
+			//SetConVarString ( "uht_map", "mp_forwardbase_kodai" )
+			SetConVarInt( "uht_wenttolobbyfirst", 1 )
+			SetConVarString ( "uht_map", GetConVarString( "ns_private_match_last_map" ) )
+			SetConVarString ( "uht_gamemode", GetConVarString( "ns_private_match_last_mode" ) )
+			return
 		}
 		else
 		{
 			SetConVarString ( "uht_map", GetMapName() )
 			SetConVarString( "uht_gamemode", GetConVarString( "mp_gamemode" ) )
 		}
-		
-		SetCurrentPlaylist( "private_match" ) 
+
+		SetCurrentPlaylist( "private_match" )
 		GameRules_ChangeMap( "mp_lobby", "private_match" )
 		SetConVarInt( "uht_wenttolobbyfirst", 1 )
 	}
@@ -39,7 +41,7 @@ void function ThreadUnholyTrinity()
 	{
 		uht_gamemode = GetConVarString( "uht_gamemode" )
 		uht_map = GetConVarString( "uht_map" )
-		
+
 		SetPlaylistVarOverride( "custom_air_accel_pilot", "9000" )
 		SetPlaylistVarOverride( "featured_mode_amped_tacticals", "1" )
 		SetPlaylistVarOverride( "fp_embark_enabled", "1" )
@@ -51,8 +53,8 @@ void function ThreadUnholyTrinity()
 		SetPlaylistVarOverride( "scorelimit", "200" )
 		SetPlaylistVarOverride( "timelimit", "30" )
 		ServerCommand( "slide_step_velocity_reduction -45" )
-		
-		SetCurrentPlaylist( uht_gamemode ) 
+
+		SetCurrentPlaylist( uht_gamemode )
 		GameRules_ChangeMap( uht_map , uht_gamemode )
 	}
 }
