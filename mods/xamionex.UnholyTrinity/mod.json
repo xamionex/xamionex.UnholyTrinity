@@ -1,7 +1,7 @@
 {
 	"Name": "xamionex.UnholyTrinity",
 	"Description": "This is my custom weapons for the UnholyTrinity server\n\nThis is a server side script, no need for clients to download",
-	"Version": "1.2.0",
+	"Version": "1.2.1",
 	"LoadPriority": 2,
 	"Scripts":[
 		{
@@ -19,8 +19,8 @@
 			}
 		}
 	],
-	
-	"ConVars": 
+
+	"ConVars":
 	[
 		{
 			"Name": "uht_wenttolobbyfirst",
