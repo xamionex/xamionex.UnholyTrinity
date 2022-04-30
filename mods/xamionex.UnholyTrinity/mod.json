@@ -25,6 +25,14 @@
 		{
 			"Name": "uht_wenttolobbyfirst",
 			"DefaultValue": "0"
+		},
+		{
+			"Name": "uht_map",
+			"DefaultValue": "mp_forwardbase_kodai"
+		},
+		{
+			"Name": "uht_gamemode",
+			"DefaultValue": "tdm"
 		}
 	]
 }
