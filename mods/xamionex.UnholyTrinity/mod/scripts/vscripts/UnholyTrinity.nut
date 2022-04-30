@@ -6,6 +6,7 @@ array<string> maplist = ["mp_forwardbase_kodai", "mp_grave","mp_homestead","mp_t
 array<string> types = ["ps","gg","tt","inf","fastball","ctf_comp","hs","cp","lts","ctf","ttdm","turbo_ttdm","attdm","ffa","fra","coliseum","lf","rocket_lf","mfd", "chamber"]
 int wentToLobbyFirst
 string uht_map
+string uht_gamemode
 
 void function UnholyTrinity_Init()
 {
@@ -14,9 +15,15 @@ void function UnholyTrinity_Init()
 	if( wentToLobbyFirst == 0)
 	{
 		if( GetMapName() == "mp_lobby" )
+		{
 			SetConVarString ( "uht_map", "mp_forwardbase_kodai" )
+		}
 		else
+		{
 			SetConVarString ( "uht_map", GetMapName() )
+			SetConVarString( "uht_gamemode", GetConVarString( "mp_gamemode" ) )
+		}
+		
 		SetCurrentPlaylist( "private_match" ) 
 		GameRules_ChangeMap( "mp_lobby", "private_match" )
 		SetConVarInt( "uht_wenttolobbyfirst", 1 )
@@ -30,6 +37,9 @@ void function ThreadUnholyTrinity()
 
 	if( GetMapName() == "mp_lobby" )
 	{
+		uht_gamemode = GetConVarString( "uht_gamemode" )
+		uht_map = GetConVarString( "uht_map" )
+		
 		SetPlaylistVarOverride( "custom_air_accel_pilot", "9000" )
 		SetPlaylistVarOverride( "featured_mode_amped_tacticals", "1" )
 		SetPlaylistVarOverride( "fp_embark_enabled", "1" )
@@ -42,7 +52,7 @@ void function ThreadUnholyTrinity()
 		SetPlaylistVarOverride( "timelimit", "30" )
 		ServerCommand( "slide_step_velocity_reduction -45" )
 		
-		SetCurrentPlaylist( "tdm" ) 
-		GameRules_ChangeMap( GetConVarString( "uht_map" ), "tdm" )
+		SetCurrentPlaylist( uht_gamemode ) 
+		GameRules_ChangeMap( uht_map , uht_gamemode )
 	}
 }
