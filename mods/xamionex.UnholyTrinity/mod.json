@@ -1,13 +1,30 @@
 {
 	"Name": "xamionex.UnholyTrinity",
 	"Description": "This is my custom weapons for the UnholyTrinity server\n\nThis is a server side script, no need for clients to download",
-	"Version": "1.1.9",
+	"Version": "1.2.0",
 	"LoadPriority": 2,
-	"Scripts": [{
-		"Path": "WeaponBanList.nut",
-		"RunOn": "SERVER && MP",
-		"ServerCallback": {
-			"After": "WeaponBanList_Init"
+	"Scripts":[
+		{
+			"Path": "WeaponBanList.nut",
+			"RunOn": "SERVER && MP",
+			"ServerCallback": {
+				"After": "WeaponBanList_Init"
+			}
+		},
+		{
+			"Path": "UnholyTrinity.nut",
+			"RunOn": "SERVER && MP",
+			"ServerCallback": {
+				"After": "UnholyTrinity_Init"
+			}
 		}
-	}]
+	],
+	
+	"ConVars": 
+	[
+		{
+			"Name": "uht_wenttolobbyfirst",
+			"DefaultValue": "0"
+		}
+	]
 }
