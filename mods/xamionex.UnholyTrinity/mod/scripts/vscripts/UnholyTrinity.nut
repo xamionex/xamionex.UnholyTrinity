@@ -8,6 +8,12 @@ string uht_gamemode
 
 void function UnholyTrinity_Init()
 {
+	thread ThreadUnholyTrinity()
+}
+
+void function ThreadUnholyTrinity()
+{
+	wait 5.0 // this wait is needed otherwise master server can't connect to game session if you change the map immediately.
 	uht_wenttolobbyfirst = GetConVarInt( "uht_wenttolobbyfirst" )
 
 	if( uht_wenttolobbyfirst == 0)
@@ -30,12 +36,8 @@ void function UnholyTrinity_Init()
 		GameRules_ChangeMap( "mp_lobby", "private_match" )
 		SetConVarInt( "uht_wenttolobbyfirst", 1 )
 	}
-	thread ThreadUnholyTrinity()
-}
 
-void function ThreadUnholyTrinity()
-{
-	wait 2.0
+	wait 2.0 // just wait a bit between mapchange, why not
 
 	if( GetMapName() == "mp_lobby" )
 	{
